@@ -1,0 +1,181 @@
+body {
+	margin: 0 auto;
+	font-family:'Courier New', Courier, monospace;
+	font-weight: 600;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: black;
+	min-height: 100vh;
+	width: 100%;
+	color: white;
+}
+.container{
+	width: 90%;
+	height: 100%;
+	border: 1px dashed #fff;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	padding: 20px;
+}
+input::-moz-focus-inner { 
+  border: 0; 
+}
+
+a {
+   outline: 0;
+}
+
+
+.submit-button {
+	margin-top: 20px;
+	width: 295px;
+}
+
+/* CSS */
+.submit-button {
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 20px 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.submit-button:focus {
+  text-decoration: none;
+}
+
+.submit-button:hover {
+  text-decoration: none;
+}
+
+.submit-button:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.submit-button:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .submit-button {
+    padding: 12px 50px;
+  }
+}
+.game-area {
+	margin:0 auto;
+	text-align: center;
+	padding-top: 20px; 
+	width: 80%;
+	
+}
+
+.game-options {
+	border-bottom: 1px dashed #CFCFCF;
+	padding-bottom: 20px;
+}
+.game-options select, .game-options input  {
+	border: 1px solid #333;
+	padding: 10px;
+	margin-right: 10px;
+	outline: none;
+}
+.game-board {
+	margin-top: 10px;
+	padding: 10px;
+	background-color: #181518;
+}
+
+.grid-box, .green-player, .red-player {
+	font-size: 35px;
+	padding: 15px 25px;
+	width: 80px;
+	height: 80px;
+	margin:0px;
+	outline: none;
+}
+.green-player {
+	background-color: green;
+	color: #FFF;
+}
+.red-player {
+	background-color: red;
+	color: #FFF;
+}
+
+.score-card {
+	font-weight: bold;
+	line-height: 25px;
+}
+.score-card span {
+	font-weight: normal;
+}
+.reset-game{
+	width: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+}
+#reset{
+	background-color: red;
+	outline: none;
+	border: none;
+	color: #fff;
+}
+.change-color{
+	width: 250px;
+	height: 50px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 10px;
+}
+.change-color .colors{
+	display: flex;
+	padding: 5px;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	background-color: black;
+}
+.change-color  span{
+	padding: 8px;
+	border-radius: 50%;
+}
+.change-color span.r{
+	background-color: red;
+}
+
+.change-color span.b{
+	background-color: blue;
+}
+
+.change-color span.g{
+	background-color: green;
+}
